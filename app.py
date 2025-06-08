@@ -6,7 +6,7 @@ from prompts.prompts_templates import generate_personal_info_prompt, generate_te
 
 load_dotenv()
 st.set_page_config(
-    page_title="TalentScout Hiring Assistant",
+    page_title="👩🏻‍💻 TalentScout Hiring Assistant",
     page_icon="🧠",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -73,7 +73,7 @@ if "chat" not in st.session_state:
     st.session_state.chat = []
     # Welcome bubbles
     st.session_state.chat.append(("assistant",
-        "Welcome to TalentScout! We’ll have a quick, easy chat to understand your background and skills better"))
+        "Welcome to TalentScout👋! We’ll have a quick, easy chat to understand your background and skills better"))
     st.session_state.step = "personal"
     st.session_state.p_step = 0
     st.session_state.personal = {}
